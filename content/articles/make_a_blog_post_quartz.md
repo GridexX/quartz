@@ -15,26 +15,26 @@ date: 2024-02-19
 This is a guide on how to make a blog post on Quartz using Obsidian.
 
 1. Clone the template
-  Clone the template available on [Github](https://github.com/new?template_name=quartz&template_owner=jackyzha0)
+   Clone the template available on [Github](https://github.com/new?template_name=quartz&template_owner=jackyzha0)
 2. Write your post
-  Write your post in markdown inside the `content` folder. Open a new vault in Obsidian and start writing your post.
+   Write your post in markdown inside the `content` folder. Open a new vault in Obsidian and start writing your post.
 3. See the result
 
-    ```bash
-    npm install
-    npx quartz build --serve
-    ```
+   ```bash
+   npm install
+   npx quartz build --serve
+   ```
 
 4. Push your changes
 
-    ```bash
-    git add .
-    git commit -m "Add my first post"
-    git push
-    ```
+   ```bash
+   git add .
+   git commit -m "Add my first post"
+   git push
+   ```
 
-    >[!SUCCESS]
-    > You have successfully made your first blog post on Quartz.
+   > [!SUCCESS]
+   > You have successfully made your first blog post on Quartz.
 
 ### Introduction
 
