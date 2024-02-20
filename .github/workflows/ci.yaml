@@ -11,10 +11,7 @@ on:
 jobs:
   build-test-deploy:
     name: Build, test and deploy to Cloudflare Pages
-    strategy:
-      matrix:
-        os: [windows-latest, macos-latest, ubuntu-latest]
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
