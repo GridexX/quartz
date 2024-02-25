@@ -1,9 +1,9 @@
 export function getTemplate({
   redirectPath,
-  withError
+  withError,
 }: {
-  redirectPath: string;
-  withError: boolean;
+  redirectPath: string
+  withError: boolean
 }): string {
   return `
   <!doctype html>
@@ -46,7 +46,7 @@ export function getTemplate({
             <h1>Password</h1>
             <h2>Please enter your password for this site.</h2>
           </hgroup>
-          ${withError ? `<p class="error">Incorrect password, please try again.</p>` : ''}
+          ${withError ? `<p class="error">Incorrect password, please try again.</p>` : ""}
           <form method="post" action="/cfp_login">
             <input type="hidden" name="redirect" value="${redirectPath}" />
             <input type="password" name="password" placeholder="Password" aria-label="Password" autocomplete="current-password" required autofocus>
@@ -57,5 +57,5 @@ export function getTemplate({
     </body>
 
   </html>
-  `;
+  `
 }
