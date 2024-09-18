@@ -1,21 +1,33 @@
 ---
-title: Welcome to GridexX Quartz Post !
-description: My first page on quartz
+title: Welcome to my Blog  !
+description: The introduction of my blog
 tags:
   - intro
 draft: false
 date: 2024-02-19
 ---
+Hi, my name is
+<h2 style="margin-top: 0.5rem">
+  <span style="color:var(--secondary);">Arsène aka </span>
+  GridexX.<br>
+  <span style="color:var(--darkgray);">I build things for the Cloud.</span>
+</h2>
 
-## Welcome to GridexX Quartz Post !
+I'm a DevOps engineer with a passion for architecting robust, scalable, and efficient cloud solutions.
 
-This is my blog post on Quartz. I am excited to share my thoughts with you. Stay tuned for more posts.
+Currently, I'm focused on improving scientific computing infrastructure at Montpellier University, where I'm bridging the gap between cutting-edge research and state-of-the-art cloud technologies.
+
+### About me
+
+My interest in development started back in 2016 when I got my first Arduino card for Christmas !
+
+Fast-forward to today, and I’ve had the privilege of working at The University of Montpellier, a start-up, a medium-sized company.
+
+My main focus these days is building an avant-garde chatbot solution for scientists inclusive at Meso@LR.
 
 ### How to use this site ?
 
 What you can do here:
 
-- See my [open source contributions](https://gridexx.github.io/open-sources-contribution/contributions/)
-- See my latest posts
 - See the posts by [tags](/tags)
-- See my [presentation](/presentation)
+

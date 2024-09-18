@@ -3,7 +3,7 @@ import * as Plugin from "./quartz/plugins"
 
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "🪴 GridexX Quartz Blog",
+    pageTitle: " GridexX Blog",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
@@ -16,8 +16,8 @@ const config: QuartzConfig = {
     theme: {
       cdnCaching: true,
       typography: {
-        header: "Open Sans",
-        body: "Source Sans Pro",
+        header: "League Spartan",
+        body: "Roboto Condensed",
         code: "Fira Code",
       },
       colors: {
@@ -32,14 +32,14 @@ const config: QuartzConfig = {
           highlight: "rgba(143, 159, 169, 0.15)",
         },
         darkMode: {
-          light: "#2e3440",
-          lightgray: "#3b4252",
-          gray: "#646464",
-          darkgray: "#d8dee9",
-          dark: "#eceff4",
-          secondary: "#5e81ac",
-          tertiary: "#88c0d0",
-          highlight: "rgba(143, 159, 169, 0.15)",
+          light: "#23232c",
+          lightgray: "#272831",
+          gray: "#a8b2c1",
+          darkgray: "#e6f1ff",
+          dark: "#ef961a",
+          secondary: "#e6f1ff",
+          tertiary: "#ef961a",
+          highlight: "#a8b2c1",
         },
       },
     },
