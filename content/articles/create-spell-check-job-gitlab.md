@@ -8,6 +8,7 @@ tags:
 draft: false
 date: 2022-10-02
 ---
+
 <script>
 
   const handleThemeChange = (theme) => {
@@ -59,7 +60,7 @@ Unfortunately, the developer who writes it wasn’t here anymore and it wasn’t
 
 ![Untitled](https://oldblog.gridexx.fr/_next/image?url=https%3A%2F%2Fwww.notion.so%2Fimage%2Fhttps%253A%252F%252Fs3-us-west-2.amazonaws.com%252Fsecure.notion-static.com%252Fe2b363f5-9a59-4af6-90a2-2b7a77e443be%252FUntitled.png%3Ftable%3Dblock%26id%3D1764212b-7904-4c7b-a7ec-96c1d134082c%26cache%3Dv2&w=1200&q=75)
 
-*The [console](https://gitlab.com/r2devops/hub/-/jobs/3081007272) of the broken spell_check job* 😢
+_The [console](https://gitlab.com/r2devops/hub/-/jobs/3081007272) of the broken spell_check job_ 😢
 
 That’s why I decided to rewrite it with another tool. Thanks to some research I found a helpful open-source tool and today I will share how I put it into reusable GitLab job.
 
@@ -73,7 +74,7 @@ If you have never heard of [codespell](https://github.com/codespell-project/code
 
 <div id="codespell-repo-card" class="repo-card" data-repo="codespell-project/codespell"></div>
 
-*Almost 2k stars! Give them power too* 🌟
+_Almost 2k stars! Give them power too_ 🌟
 
 **Installation and usage is really simple :**
 
@@ -85,7 +86,7 @@ codespell <options>
 What’s really nice with it, it’s the console output, which shows in order :
 
 1. The file where’s the typo
-2. The Misspelled word 
+2. The Misspelled word
 3. One or many rewrite suggestion
 
 ![Untitled](https://oldblog.gridexx.fr/_next/image?url=https%3A%2F%2Fwww.notion.so%2Fimage%2Fhttps%253A%252F%252Fs3-us-west-2.amazonaws.com%252Fsecure.notion-static.com%252Fbd530b03-e156-4a6a-aa4e-f659f29c0c57%252FUntitled.png%3Ftable%3Dblock%26id%3D97e5bd14-d773-4ab0-92ff-341d87c3fd33%26cache%3Dv2&w=750&q=75)
@@ -125,9 +126,9 @@ For this stage the `tests` was the most appropriate, as it performs spell check 
 
 The Myspelling behavior of the [hub](https://gitlab.com/r2devops/hub/) project where it aims to be used, determines some condition for the job :
 
-- [ ]  Misspell files inside a specific directory
-- [ ]  Ignore some specific world in a `dictionary` file
-- [ ]  Ignore some file inside this directory if they contains code
+- [ ] Misspell files inside a specific directory
+- [ ] Ignore some specific world in a `dictionary` file
+- [ ] Ignore some file inside this directory if they contains code
 
 It brought us with the current content in the `.gitlab-ci.yml` file :
 
@@ -147,7 +148,7 @@ codespell:
 
 ### 4. Write like a scribe
 
-It is the core of the job, what command will be executed. This part written inside the `script` section of the file, is based on all previous elements and include them in the code to performs the determined condition. 
+It is the core of the job, what command will be executed. This part written inside the `script` section of the file, is based on all previous elements and include them in the code to performs the determined condition.
 
 This section won’t be described, if you’re interested, this job is available on the platform r2devops, [here](https://r2devops.io/_/r2devops-bot/codespell)
 

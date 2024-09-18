@@ -32,6 +32,7 @@ date: 2024-02-19
 </style>
 
 Hi, my name is
+
 <h2 style="margin-top: 0.5rem">
   <span style="color:var(--secondary);">Arsène aka </span>
   GridexX.<br>
@@ -47,11 +48,12 @@ Currently, I'm focused on improving scientific computing infrastructure at Montp
 <div class="container">
   <div class="text-content">
 
-  My interest in development started back in 2016 when I got my first Arduino card for Christmas!
-  
-  Fast-forward to today, and I've had the privilege of working at The University of Montpellier, a start-up, a medium-sized company.
-  
-  My main focus these days is building an avant-garde chatbot solution for scientists inclusive at Meso@LR.
+My interest in development started back in 2016 when I got my first Arduino card for Christmas!
+
+Fast-forward to today, and I've had the privilege of working at The University of Montpellier, a start-up, a medium-sized company.
+
+My main focus these days is building an avant-garde chatbot solution for scientists inclusive at Meso@LR.
+
   </div>
   <div class="image-content">
     <img src="./IMG_8604.jpeg" alt="Profile image" width="250" />
