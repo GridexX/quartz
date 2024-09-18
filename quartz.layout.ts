@@ -12,6 +12,18 @@ export const sharedPageComponents: SharedLayout = {
       YouTube: "https://www.youtube.com/@gridexx8238",
     },
   }),
+  afterBody: [
+    Component.Comments({
+      provider: "giscus",
+      options: {
+        repo: "GridexX/quartz",
+        repoId: "R_kgDOLSUesA",
+        category: "Announcements",
+        categoryId: "DIC_kwDOFxRnmM4B-Xg6",
+      },
+    }),
+    Component.RecentNotes({ limit: 5, title: "Recent Articles" }),
+  ],
 }
 
 // components for pages that display a single page (e.g. a single note)
@@ -23,7 +35,6 @@ export const defaultContentPageLayout: PageLayout = {
     Component.TagList(),
   ],
   left: [
-    Component.DesktopOnly(Component.Image()),
     Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
     Component.Search(),
@@ -41,7 +52,6 @@ export const defaultContentPageLayout: PageLayout = {
 export const defaultListPageLayout: PageLayout = {
   beforeBody: [Component.Breadcrumbs(), Component.ArticleTitle(), Component.ContentMeta()],
   left: [
-    Component.DesktopOnly(Component.Image()),
     Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
     Component.Search(),
