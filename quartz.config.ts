@@ -7,10 +7,11 @@ const config: QuartzConfig = {
     enableSPA: true,
     enablePopovers: true,
     analytics: {
-      provider: "plausible",
+      provider: "google",
+      tagId: "G-3HLX7XWG79",
     },
     locale: "en-US",
-    baseUrl: "quartz.gridexx.fr",
+    baseUrl: "blog.gridexx.fr",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "created",
     theme: {
