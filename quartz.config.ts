@@ -18,8 +18,8 @@ const config: QuartzConfig = {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "League Spartan",
-        body: "Roboto Condensed",
+        header: "Poppins",
+        body: "Inter",
         code: "Fira Code",
       },
       colors: {

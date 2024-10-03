@@ -5,6 +5,7 @@ tags:
   - intro
 draft: false
 date: 2024-02-19
+enableToc: false
 ---
 
 <style>
@@ -67,3 +68,5 @@ What you can do here:
 - See the posts by [tags](/tags)
 
 <!-- Add a link to the portofolio -->
+
+[[/articles/create-spell-check-job-gitlab]]

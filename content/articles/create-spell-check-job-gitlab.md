@@ -6,6 +6,7 @@ tags:
   - ci/cd
   - development
 draft: false
+slug: create-spell-check-job-gitlab
 date: 2022-10-02
 ---
 
