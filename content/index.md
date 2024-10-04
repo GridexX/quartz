@@ -66,7 +66,5 @@ My main focus these days is building an avant-garde chatbot solution for scienti
 What you can do here:
 
 - See the posts by [tags](/tags)
-
+- See all my [articles](/articles)
 <!-- Add a link to the portofolio -->
-
-[[/articles/create-spell-check-job-gitlab]]
