@@ -1,6 +1,10 @@
 import { QuartzTransformerPlugin } from "../types"
 import rehypePrettyCode, { Options as CodeOptions, Theme as CodeTheme } from "rehype-pretty-code"
-
+import { getHighlighter } from "shiki"
+import { readFile } from "fs/promises"
+import { surrealSyntax } from "./surrealSyntax"
+// import the static highlighter from the syntax directory
+// import
 interface Theme extends Record<string, CodeTheme> {
   light: CodeTheme
   dark: CodeTheme
@@ -20,7 +24,15 @@ const defaultOptions: Options = {
 }
 
 export const SyntaxHighlighting: QuartzTransformerPlugin<Partial<Options>> = (userOpts) => {
-  const opts: CodeOptions = { ...defaultOptions, ...userOpts }
+  const options = {
+    getHighlighter: (options: any) =>
+      getHighlighter({
+        ...options,
+        langs: ["plaintext", surrealSyntax],
+      }),
+  }
+  const allOptions = { ...defaultOptions, ...userOpts, ...options }
+  const opts: CodeOptions = allOptions
 
   return {
     name: "SyntaxHighlighting",

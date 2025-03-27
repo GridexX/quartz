@@ -96,7 +96,7 @@ If your recipient's key isn't available on the Mailvelope key server, you have t
     Ask your recipient to send you their public key. They can export it from their key management tool and send it as a file (typically with a `.asc` extension).
 2.  **Public key server lookup**:
     Search for your recipient's email on https://keys.openpgp.org/. If found, you can download their public key directly from this site.
-        ![image.png](../images/keys-openpgp.png)
+    ![image.png](../images/keys-openpgp.png)
 
 After obtaining the key:
 
