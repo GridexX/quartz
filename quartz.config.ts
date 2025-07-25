@@ -7,8 +7,10 @@ const config: QuartzConfig = {
     enableSPA: true,
     enablePopovers: true,
     analytics: {
-      provider: "google",
-      tagId: "G-3HLX7XWG79",
+      provider: "goatcounter",
+      websiteId: "blog-post-quartz",
+      host: "goatcounter.gridexx.fr",
+      scriptSrc: "https://goatcounter.gridexx.fr/count.js",
     },
     locale: "en-US",
     baseUrl: "blog.gridexx.fr",
